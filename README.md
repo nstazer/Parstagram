@@ -84,7 +84,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+For whatever reason, I can't get the posts to be connected to each other, despite the LinearLayout height being set to wrap_content. Not sure what the issue is.
 
 ## Open-source libraries used
 
