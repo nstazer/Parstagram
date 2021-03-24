@@ -38,23 +38,9 @@ import java.util.List;
 
 import static android.app.Activity.RESULT_OK;
 
-/*
- * A simple {@link Fragment} subclass.
- * Use the {@link ComposeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ComposeFragment extends Fragment {
-    /*
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-     */
 
     private static final String TAG = "ComposeFragment";
     public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 13;
@@ -70,34 +56,6 @@ public class ComposeFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /*
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ComposeFragment.
-
-    // TODO: Rename and change types and number of parameters
-    public static ComposeFragment newInstance(String param1, String param2) {
-        ComposeFragment fragment = new ComposeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -115,7 +73,6 @@ public class ComposeFragment extends Fragment {
         ivPostImage = view.findViewById(R.id.ivPostImage);
         btnLogout = view.findViewById(R.id.btnLogout);
 
-        /*
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -125,7 +82,6 @@ public class ComposeFragment extends Fragment {
             }
         });
 
-         */
 
 
         btnCaptureImage.setOnClickListener(new View.OnClickListener() {
@@ -155,13 +111,11 @@ public class ComposeFragment extends Fragment {
             }
         });
     }
-    /*
+
     private void goLoginActivity() {
         Intent i = new Intent(getContext(), LoginActivity.class);
         startActivity(i);
-        finish();
     }
-    */
 
     private void launchCamera() {
         // create Intent to take a picture and return control to the calling application
